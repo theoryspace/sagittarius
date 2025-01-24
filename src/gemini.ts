@@ -22,7 +22,7 @@ const genAI = new GoogleGenerativeAI(DEFAULT_DEV_API_KEY);
 export async function makeGeminiRequest(text: string, imageUrl: string) {
   console.log("Calling makeGeminiRequest()...");
 
-  const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
   // split imageUrl of format "data:...;base64,<data>"
   // into 1) mime-type and 2) just the data

@@ -54,7 +54,7 @@ export async function makeOpenAIRequest(
   ];
 
   const body = {
-    model: "gpt-4-vision-preview",
+    model: "gpt-4-turbo",
     max_tokens: 4096,
     temperature: 0,
     messages,
